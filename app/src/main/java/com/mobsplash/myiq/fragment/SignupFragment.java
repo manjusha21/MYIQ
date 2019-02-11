@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mobsplash.myiq.DashboardActivity;
+import com.mobsplash.myiq.MainActivity;
 import com.mobsplash.myiq.R;
 
 
@@ -18,19 +19,19 @@ import com.mobsplash.myiq.R;
 public class SignupFragment extends Fragment {
 
     public static final String TAG = "SignupFragment";
-    DashboardActivity parent;
+    MainActivity parent;
     View convertView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        parent=(DashboardActivity)getActivity();
+        parent=(MainActivity)getActivity();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        convertView=inflater.inflate(R.layout.fragment_dashboard,null);
+        convertView=inflater.inflate(R.layout.fragment_signup,null);
         return convertView;
     }
 }
